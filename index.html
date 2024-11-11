@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Responsive Tailwind NavBar</title>
+  </head>
+  <body class="">
+    <!--NAVBAR CONTENT-->
+    <section class="z-20 fixed top-0 left-0 w-full">
+      <!--Navbar-->
+      <nav class="w-full bg-green-500 h-16 px-3 text-white font-bold">
+        <div
+          class="w-full h-full max-w-screen-lg mx-auto flex justify-between items-center"
+        >
+          <p class="text-2xl uppercase tracking-widest">the nav</p>
+
+          <div
+            class="md:hidden w-8 h-8 flex flex-col justify-between cursor-pointer"
+            id="hamburger"
+          >
+            <!--Hamburger-->
+            <div
+              id="h-s-1"
+              class="hamburger-slice w-full h-1 bg-white rounded-full transition duration-500 ease-in-out"
+            ></div>
+            <div
+              id="h-s-1"
+              class="hamburger-slice w-full h-1 bg-white rounded-full transition duration-500 ease-in-out"
+            ></div>
+            <div
+              id="h-s-1"
+              class="hamburger-slice w-full h-1 bg-white rounded-full transition duration-500 ease-in-out"
+            ></div>
+          </div>
+          <div class="-mx-3 md:block hidden">
+            <!--Nav Items-->
+            <a href="#" class="mx-3 transition duration-500 hover:text-gray-200"
+              >Home</a
+            >
+            <a href="#" class="mx-3 transition duration-500 hover:text-gray-200"
+              >About</a
+            >
+            <a href="#" class="mx-3 transition duration-500 hover:text-gray-200"
+              >Work</a
+            >
+            <a href="#" class="mx-3 transition duration-500 hover:text-gray-200"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--MAIN WEBSITE CONTENT-->
+    <section class="h-screen w-screen absolute top-0 left-0">
+      <img
+        src="./img/gal-10.jpeg"
+        alt="hero image"
+        class="w-full h-full object-cover absolute top-0 left-0"
+      />
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-gray-400 bg-opacity-40"
+      ></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
