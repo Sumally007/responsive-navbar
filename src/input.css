@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-items {
+  @apply mx-3 transition duration-500 hover:text-gray-200;
+}
+
+.hamburger-slice {
+  @apply w-full h-1 bg-white rounded-full transition duration-500 ease-in-out;
+}
+
+.sidenav-items {
+  @apply my-20 ease-in-out hover:text-gray-200;
+  transition: transform 0.3s, opacity 0.3s, color 0.5s;
+}
